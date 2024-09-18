@@ -26,6 +26,13 @@ a {
 
 body {
   font-family: "Roboto";
+  background-color: #F5F5F5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main {
@@ -35,7 +42,7 @@ body {
 }
 .main__button {
   text-transform: uppercase;
-  padding: 9px 34px;
+  padding: 18px 34px;
   background-color: #F2726F;
   color: #fff;
   border-radius: 9px;
@@ -83,8 +90,10 @@ body {
   color: #fff;
 }
 .landing__btn {
-  margin-top: 48px;
-  height: 48px;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 80px;
 }
 
 .block__div {
@@ -153,12 +162,17 @@ body {
 }
 
 .promise {
-  margin-top: 800px;
+  margin-top: 900px;
   height: 308px;
   padding: 0 210px;
 }
 .promise__container {
   margin-top: 60px;
+}
+.promise__card {
+  display: flex;
+  align-items: start;
+  gap: 23px;
 }
 
 .video {
@@ -185,10 +199,59 @@ body {
   align-self: start;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.services {
+  margin: 110px 210px;
+}
+.services__wrap {
+  padding-top: 40px;
+}
+.services__container {
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 24px;
+}
+.services__card {
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  padding: 50px 44px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 1s;
+}
+.services__card__img {
+  margin-bottom: 30px;
+}
+.services__card:hover {
+  box-shadow: 0 10px 25px gray;
+  transition: 1s;
+}
+.services__btn {
+  display: block;
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 60px;
+  padding: 18px 18px;
+}
+
+.card__title {
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 26px;
+  color: #F2726F;
+  margin-bottom: 20px;
+}
+.card__text {
+  width: 235px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4B4B4B;
+}
+
+.gallery {
+  color: #fff;
+  background-color: #5D62B5;
 }
 
 .purple {

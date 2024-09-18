@@ -11,6 +11,12 @@ a{
 }
 body{
     font-family: 'Roboto';
+    background-color: #F5F5F5;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .main{
     background: url('./../img/HERO.png') no-repeat center center/cover;
@@ -18,7 +24,7 @@ body{
     padding: 0 210px;
     &__button{
         text-transform: uppercase;
-        padding: 9px 34px;
+        padding: 18px 34px;
         background-color: $base-color;
         color: #fff;
         border-radius: 9px;
@@ -65,8 +71,9 @@ body{
         color: #fff;
     }
     &__btn{
-        margin-top: 48px;
-        height: 48px;
+        display: block;
+        width: max-content;
+        margin-top: 80px;
     }
 }
 .block{
@@ -135,12 +142,17 @@ body{
     line-height: 42px;
 }
 .promise{
-    margin-top: 800px;
+    margin-top: 900px; 
     height: 308px;
     padding: 0 210px;
 
     &__container{
         margin-top: 60px;
+    }
+    &__card{
+        display: flex;
+        align-items: start;
+        gap: 23px;
     }
 }
 .video{
@@ -170,10 +182,59 @@ body{
         align-self: start;
     }
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.services{
+    margin: 110px 210px;
+    &__wrap{
+        padding-top: 40px;
+    }
+    &__container{
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 24px;
+    }
+    &__card{
+        width: max-content;
+        text-align: center;
+        padding: 50px 44px;
+        background-color: #fff;
+        border-radius: 20px;
+        transition: 1s;
+        &__img{
+            margin-bottom: 30px;
+        }
+
+    }
+    &__card:hover{
+        box-shadow: 0 10px 25px gray;
+        transition: 1s;
+    }
+    &__btn{
+        display: block;
+        margin: 0 auto;
+        width: max-content ;
+        margin-top: 60px;
+        padding: 18px  18px;
+    }
+}
+.card{
+    &__title{
+        font-size: 19px;
+        font-weight: 900;
+        line-height: 26px;
+        color: $base-color;
+        margin-bottom: 20px;
+
+    }
+    &__text{
+        width: 235px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4B4B4B;
+    }
+}
+.gallery{
+    color: #fff;
+    background-color: #5D62B5;
 }
 .purple{
     color: #5D62B5;
