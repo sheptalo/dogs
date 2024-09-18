@@ -424,6 +424,15 @@ body{
 
     }
 }
+.footer{ 
+    margin: 160px 210px 0 210px;
+    &__info{
+        width: 235px;
+    }
+    &__links{
+        flex-direction: column;
+    }
+}
 .selected{
     border-bottom: 4px solid white;
 }

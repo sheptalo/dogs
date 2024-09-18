@@ -438,6 +438,16 @@ body {
   padding: 43px 70px;
 }
 
+.footer {
+  margin: 160px 210px 0 210px;
+}
+.footer__info {
+  width: 235px;
+}
+.footer__links {
+  flex-direction: column;
+}
+
 .selected {
   border-bottom: 4px solid white;
 }
