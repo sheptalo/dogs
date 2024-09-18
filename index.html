@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!--Прошу обратить внимание на то что макет разрешением 1440px и все значения подставлены под него-->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -156,33 +157,136 @@
     <section class="appointment">
         <div class="appointment__wrap">
             <div class="appointment__form-container">
-                <h3>Make an appointment</h3>
-                <form action="">
-                    <div>
-                        <input type="text"><input type="text">
-                    </div>
-                    <div><input type="text"><input type="text"></div>
-                    <textarea name="" id=""></textarea>
-                    <button type="submit"></button>
+                <h3 class="appointment__form__title">Make an appointment</h3>
+                <form class="appointment__form" action="">
+                    <fieldset>
+                        <input class="appointment__form__input" type="text" placeholder="Name">
+                        <input class="appointment__form__input" type="email" placeholder="Email">
+                    </fieldset>
+                    <fieldset>
+                        <input class="appointment__form__input" type="tel" placeholder="Phone Number">
+                        <input class="appointment__form__input" type="text" placeholder="Select Service">
+                    </fieldset>
+                    <textarea name="" id="" placeholder="Tell us about your puppers include his/her name"></textarea>
+                    <button type="submit" class="appointmnet__button main__button">Make an Appointment</button>
                 </form>
             </div>
             <div class="appointment__stat">
-                <p>Maxime placeat facere possimus omnis </p>
-                <h2>5,700+</h2>
-                <h3>customers served</h3>
+                <p class="stat__title">Maxime placeat facere possimus omnis </p>
+                <h2 class="stat__num">5,700+</h2>
+                <h3 class="stat__served">customers served</h3>
             </div>
         </div>
     </section>
+
     <section class="gallery">
-        <p class="section__desc alabuga-icon">GALLERY & LIVE STREAMS</p>
-        <h2 class="section__title">Check out our hard workers</h2>
+        <div class="gallery__wrap">
+            <p class="section__desc alabuga-icon">GALLERY & LIVE STREAMS</p>
+            <h2 class="section__title">Check out our hard workers</h2>
             
+            <nav class="gallery__nav">
+                <a href="#" class="gallery__link">Gallery</a>
+                <a href="#" class="gallery__link selected">Live stream: Yard 1</a>
+                <a href="#" class="gallery__link">Live stream: Yard 2</a>
+                <a href="#" class="gallery__link">Live stream: Yard 3</a>
+            </nav>
+            <img class="gallery__img" src="./assets/img/dog-yard1.png" alt="">
+        </div>
+
     </section>
-    <section class="customers"></section>
-    <section class="impact"></section>
+    <section class="customers">
+        <div>
+            <h3 class="section__desc alabuga-alternate purple">Our CUSTOMERS</h3>
+            <p class="customers__title section__title">
+                Illum qui dolorem eum quo voluptas ut distinctio
+            </p>
+        </div>
+        <div class="customers__cards">
+            <div class="customers__card services__card">
+                <p class="customers__review card__text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”
+                </p>                
+                <div class="customers__info">
+                    <img src="./assets/img/reviews/cullen.png" alt="" class="services__card__img">
+                    <h3 class="customers__name card__title">Cullen Bohannon</h3>
+                </div>  
+            </div>
+            <div class="customers__card services__card">
+                <p class="customers__review card__text">
+                    “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ipsam voluptatem aspernatur.”                </p>                
+                <div class="customers__info">
+                    <img src="./assets/img/reviews/jeni.png" alt="" class="services__card__img">
+                    <h3 class="customers__name card__title">Jennifer Thomas</h3>
+                </div>  
+            </div>
+
+        </div>
+
+    </section>
+    <section class="impact">
+        <img class='impact__img' src="./assets/img/impact/dog-lie.png" alt="">
+        <div class="impact__wrap">
+            <div>
+                <h3 class="section__desc alabuga-icon">Our CUSTOMERS</h3>
+                <p class="customers__title section__title">
+                    Illum qui dolorem eum quo voluptas ut distinctio
+                </p>
+            </div>
+            <div class='impact__container container'>
+                <div class="impact__card">
+                    <img src="./assets/img/impact/dog_duckling_24x.png" alt="">
+                    <div class="impact__stat">
+                        <p class="impact__num">
+                            3,700
+                        </p>
+                        <p class="purple">puppy baths</p>
+                    </div>
+                </div>
+                <div class="impact__card">
+                    <img src="./assets/img/impact/dog_house_24px.png" alt="">
+                    <div class="impact__stat">
+                        <p class="impact__num">
+                            4,500
+                        </p>
+                        <p class="purple">dogs boarded</p>
+                    </div>
+                </div>
+                <div class="impact__card">
+                    <img src="./assets/img/impact/dog_leash_24x.png" alt="">
+                    <div class="impact__stat">
+                        <p class="impact__num">2,900</p>
+                        <p class="purple">pups trained</p>
+                    </div>
+                </div>
+                <div class="impact__card">
+                    <img src="./assets/img/impact/dog_food_bowl_24x.png" alt="">
+                    <div class="impact__stat">
+                        <p class="impact__num">12k+</p>
+                        <p class="purple">meals served</p>
+                    </div>
+                </div>
+            </div>
+            <div class="impact__appointment">
+                <div class="impact__block container">
+                    <h2>Sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua</h2>
+                    <a href="#" class="main__button">Make an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <div></div>
-        <div></div>
+        <div>
+            <div class="container"></div>
+            <div>
+                <div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="footer__copyright container"></div>
     </footer>
 </body>
 </html>

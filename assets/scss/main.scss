@@ -1,5 +1,6 @@
 @import 'fonts.scss';
 $base-color: #F2726F;
+$bg-color: #5D62B5;
 *{
     padding: 0;
     margin: 0;
@@ -29,6 +30,8 @@ body{
         color: #fff;
         border-radius: 9px;
         font-size: 12px;
+        border: 0;
+        width: max-content;
     }
 } 
 .header{
@@ -72,7 +75,6 @@ body{
     }
     &__btn{
         display: block;
-        width: max-content;
         margin-top: 80px;
     }
 }
@@ -86,7 +88,7 @@ body{
 .dog{
     width: 1034.17px;
     height: 843.47px;
-    background-color: #5D62B5;
+    background-color: $bg-color;
     // background: url('./../img/ABOUT.png') no-repeat center /contain;
     position: absolute;
     margin-left: 210px;
@@ -228,14 +230,204 @@ body{
     &__text{
         width: 235px;
         font-size: 16px;
-        line-height: 24px;
+        line-height:    x;
         color: #4B4B4B;
     }
 }
-.gallery{
+.appointment{
+    background: url('./../img/APPOINTMENT.png') no-repeat center / cover;
     color: #fff;
-    background-color: #5D62B5;
+
+    &__wrap{
+        display: flex;
+        padding-top: 130px;
+        padding-left: 210px;
+        padding-bottom: 210px;
+    }
+    &__form-container{
+        width: 585px;
+        height: 550px;
+
+        background-color: $bg-color;
+        padding: 76px 57px;
+        border-radius: 40px;
+    }
+    &__stat{
+        padding: 166px 111px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 46px;
+        // justify-content: space-between; 
+    }
+    &__button{
+        float: right;
+    }
+    &__form{
+        display: flex;
+        margin-top: 48px;
+        flex-direction: column;
+        gap: 22px;
+        fieldset{
+            display: flex;
+            gap: 22px;
+            border: 0;
+        }
+        &__input{
+            width: 100%;
+            background-color: inherit;
+            border: 1px solid white;
+            border-radius: 10px;
+            height: 48px;
+        }
+        textarea{
+            background-color: inherit;
+            border: 1px solid white;
+            height: 180px;
+            border-radius: 10px;
+
+        }
+        textarea::placeholder{
+            padding: 17px 23px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__input::placeholder{
+            padding-left: 23px;
+            color: #fff;
+        }
+        &__title{
+            text-align: center;
+            font-size: 36px;
+            line-height: 42px;
+            font-weight: 900;    
+        }
+    }
 }
+.stat{
+    &__title{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 900;
+    }
+    &__num {
+        font-size: 96px;
+        line-height: 56px;
+    }
+    &__served{
+        font-size: 19px;
+    }
+}
+.gallery{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    margin-top: -100px;
+
+    &__wrap{
+        background-color: $bg-color;
+        margin: 0 210px;
+        padding: 100px 87px;
+        border-radius: 40px;
+        height: 550px;
+
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__link{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+    }
+    &__img{
+        margin-top: 100px;
+        position: absolute  ;
+    }
+
+
+}
+
+.customers{
+
+    margin: 0 210px;
+    margin-top: 900px;
+    margin-bottom: 210px;
+    display: flex;
+    justify-content: space-between;
+
+    &__title{
+        width: 328px;
+    }
+    &__cards{
+        display: flex;
+        gap: 24px;
+    }
+    &__info{
+        margin-top: 36px;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+
+    }
+    &__review{
+        text-align: left;
+    }
+    &__name{
+        font-size: 16px;
+    }
+}
+
+.impact{
+    color: #fff;
+    height: 608px;
+    background: url('./../img/impact/IMPACT.png') no-repeat center / cover;
+
+    &__wrap{
+        padding: 112px 220px;
+    }
+    &__img{
+        position: absolute; 
+        right: 210px;
+        margin-top: -120px;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+    }
+    &__container{
+        margin-top: 79px;
+    }
+    &__num{
+        font-size: 36px;
+    }
+    &__stat{
+        margin-left: 11px;
+        font-weight: 900;
+    }
+    &__appointment{
+        height: 150px;
+        position: absolute;
+        background-color: $bg-color;
+        border-radius: 20px;
+        margin-top: 100px;
+        width: calc(100% - 440px);
+    }
+    &__block{
+        align-items: center;
+        padding: 43px 70px;
+
+    }
+}
+.selected{
+    border-bottom: 4px solid white;
+}
+
 .purple{
     color: #5D62B5;
 }

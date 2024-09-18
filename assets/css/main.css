@@ -47,6 +47,9 @@ body {
   color: #fff;
   border-radius: 9px;
   font-size: 12px;
+  border: 0;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .header {
@@ -91,8 +94,6 @@ body {
 }
 .landing__btn {
   display: block;
-  width: -moz-max-content;
-  width: max-content;
   margin-top: 80px;
 }
 
@@ -245,13 +246,200 @@ body {
 .card__text {
   width: 235px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: x;
   color: #4B4B4B;
 }
 
-.gallery {
+.appointment {
+  background: url("./../img/APPOINTMENT.png") no-repeat center/cover;
   color: #fff;
+}
+.appointment__wrap {
+  display: flex;
+  padding-top: 130px;
+  padding-left: 210px;
+  padding-bottom: 210px;
+}
+.appointment__form-container {
+  width: 585px;
+  height: 550px;
   background-color: #5D62B5;
+  padding: 76px 57px;
+  border-radius: 40px;
+}
+.appointment__stat {
+  padding: 166px 111px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+}
+.appointment__button {
+  float: right;
+}
+.appointment__form {
+  display: flex;
+  margin-top: 48px;
+  flex-direction: column;
+  gap: 22px;
+}
+.appointment__form fieldset {
+  display: flex;
+  gap: 22px;
+  border: 0;
+}
+.appointment__form__input {
+  width: 100%;
+  background-color: inherit;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 48px;
+}
+.appointment__form textarea {
+  background-color: inherit;
+  border: 1px solid white;
+  height: 180px;
+  border-radius: 10px;
+}
+.appointment__form textarea::-moz-placeholder {
+  padding: 17px 23px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.appointment__form textarea::placeholder {
+  padding: 17px 23px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.appointment__form__input::-moz-placeholder {
+  padding-left: 23px;
+  color: #fff;
+}
+.appointment__form__input::placeholder {
+  padding-left: 23px;
+  color: #fff;
+}
+.appointment__form__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+}
+
+.stat__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+}
+.stat__num {
+  font-size: 96px;
+  line-height: 56px;
+}
+.stat__served {
+  font-size: 19px;
+}
+
+.gallery {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  margin-top: -100px;
+}
+.gallery__wrap {
+  background-color: #5D62B5;
+  margin: 0 210px;
+  padding: 100px 87px;
+  border-radius: 40px;
+  height: 550px;
+}
+.gallery__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.gallery__link {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+}
+.gallery__img {
+  margin-top: 100px;
+  position: absolute;
+}
+
+.customers {
+  margin: 0 210px;
+  margin-top: 900px;
+  margin-bottom: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+.customers__title {
+  width: 328px;
+}
+.customers__cards {
+  display: flex;
+  gap: 24px;
+}
+.customers__info {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.customers__review {
+  text-align: left;
+}
+.customers__name {
+  font-size: 16px;
+}
+
+.impact {
+  color: #fff;
+  height: 608px;
+  background: url("./../img/impact/IMPACT.png") no-repeat center/cover;
+}
+.impact__wrap {
+  padding: 112px 220px;
+}
+.impact__img {
+  position: absolute;
+  right: 210px;
+  margin-top: -120px;
+}
+.impact__card {
+  display: flex;
+  align-items: center;
+}
+.impact__container {
+  margin-top: 79px;
+}
+.impact__num {
+  font-size: 36px;
+}
+.impact__stat {
+  margin-left: 11px;
+  font-weight: 900;
+}
+.impact__appointment {
+  height: 150px;
+  position: absolute;
+  background-color: #5D62B5;
+  border-radius: 20px;
+  margin-top: 100px;
+  width: calc(100% - 440px);
+}
+.impact__block {
+  align-items: center;
+  padding: 43px 70px;
+}
+
+.selected {
+  border-bottom: 4px solid white;
 }
 
 .purple {
